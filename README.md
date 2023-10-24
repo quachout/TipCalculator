@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Tip Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the only [Tip Calculator](https://quachout.github.io/TipCalculator/) you need when you go out to restaurants. It calculates the amount of tip and total you need to add by using the subtotal and not the subtotal with tax.
 
-## Available Scripts
+### Why do you need this?
 
-In the project directory, you can run:
+At some restaurants, they generate the tip using the subtotal + tax, which means you're tipping based on the tax in addition to the items you ordered. With the Tip Calculator, your tip amount will be generated using the subtotal and the tax will be added afterwards.
 
-### `npm start`
+### How to use?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Simply enter the subtotal shown on the receipt.
+2. Enter the tip amount you want to provide.
+3. Enter the amount of tax that is shown on your receipt.
+4. Click **Calculate Total**
+5. Now write the total that is displayed
+6. Write the amount of tip calculated, you need to write the amount of tip since that is how the servers/waiters will input your tip into their system.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### How is the "Total to pay" calculated?
 
-### `npm test`
+"Total to pay" is calculated by using this formula
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Total to pay = `subtotal*(1+(tip/100)) + tax`
 
-### `npm run build`
+### How is "Amount of tip to write" calculated?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+"Amount of tip to write" is calculated by taking the total (from above) and subtracting it from the subtotal plus the tax
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Amount of tip to write = `total - (subtotal + tax)`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
