@@ -9,7 +9,7 @@ function InputBox(props) {
     </label>
     <input 
         type="text" 
-        inputMode="numeric"
+        // inputMode="numeric"
         onChange={(e) => props.onChange(e.target.value)}
         placeholder={props.placeholder}
     />
