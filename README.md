@@ -21,9 +21,9 @@ At some restaurants, they generate the tip using the subtotal + tax, which means
 
 Total to pay = `subtotal*(1+(tip/100)) + tax`
 
-### How is "Amount of tip to write" calculated?
+### How is "Amount of tip you write" calculated?
 
-"Amount of tip to write" is calculated by taking the total (from above) and subtracting it from the subtotal plus the tax
+"Amount of tip you write" is calculated by taking the total (from above) and subtracting it from the subtotal plus the tax
 
-Amount of tip to write = `total - (subtotal + tax)`
+Amount of tip you write = `total - (subtotal + tax)`
 
